@@ -6,9 +6,6 @@
     <session-factory>
 
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/ESCUELA</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">1234</property>
 
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
         <property name="hibernate.show_sql">true</property>
@@ -17,5 +14,6 @@
         <mapping class="org.gerdoc.model.Profesor"/>
         <mapping class="org.gerdoc.model.Materia"/>
         <mapping class="org.gerdoc.model.ProfesorMateria"/>
+        <mapping class="org.gerdoc.model.AlumnoMateria"/>
     </session-factory>
 </hibernate-configuration>
